@@ -1,0 +1,57 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long int
+int main() {
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+        ll c,r;
+        cin>>c>>r;
+        if(c<10&&r<10)
+        {
+            cout<<1<<" "<<1<<"\n";
+        }
+        else if(r==c)
+        {
+            ll s=0,max=0;
+            s=c/9;
+            if(c%9>0)
+                s++;
+            max=s;
+            
+            {
+                cout<<0<<" "<<max<<"\n";
+            }
+        }
+        else if(c<10)
+        {
+            cout<<0<<" "<<1<<"\n";
+        }
+        else if(r<10)
+        {
+            cout<<1<<" "<<1<<"\n";
+        }
+        else
+        {
+            ll s=0,max=0;
+            s=c/9;
+            if(c%9>0)
+                s++;
+            max=s;
+            s=0;
+            s=r/9;
+            if(r%9>0)
+                s++;
+            if(s<=max)
+            {
+                cout<<1<<" "<<s<<"\n";
+            }
+            else
+            {
+                cout<<0<<" "<<max<<"\n";
+            }
+        }
+    }
+    
+}
