@@ -1,0 +1,97 @@
+#include <bits/stdc++.h>
+#include <boost/multiprecision/cpp_int.hpp> 
+using namespace boost::multiprecision;
+#define ll long long int
+// #pragma GCC optimize "trapv"   //: Checking for overflow : Gives runtime error instead of wrong answer
+#define inf 1000000000000000000
+#define mod 1000000007
+const double PI = acos(-1.0);
+#define ull unsigned long long 
+
+#define dec cout<<fixed<<setprecision(6)
+#define min3(a, b, c) min(a, min(b, c))
+#define max3(a, b, c) max(a, max(b, c))
+#define endl "\n"
+#define bitcount(x) __builtin_popcount(x)
+#define ff first
+#define ss second
+#define pb push_back
+#define mp make_pair
+
+template <typename T>
+T modpow(T base, T exp, T modulus){  
+    base %= modulus;  T result = 1;  
+    while(exp > 0){    
+        if(exp & 1) result = (result * base) % modulus;    
+        base = (base * base) % modulus;    
+        exp >>= 1;  
+    }  
+    return result;
+}
+ll lcm(ll a, ll b) { return (a * (b / __gcd(a, b)));
+
+
+
+
+
+
+using namespace std;
+int main() 
+{
+	// your code goes here
+	ios::sync_with_stdio(0);cin.tie(0);
+	ll T;
+	cin>>T;
+	while(T--)
+	{
+	    ll n,k;
+	    cin>>n;
+	    ll a[n]={0},s=0;
+	    for(ll i=0;i<n;i++)
+	    {
+	        cin>>a[i];
+	    }
+	    for(ll i=0;i<n;i++)
+	    {
+	        for(ll j=0;j<n;j++)
+	        {
+	            if(i!=j)
+	            {
+	                
+	            }
+	        }
+	    }
+	     
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    _____________________________________________________________________         
+    |                                                                    |
+    |    *       *   *******     *       *   *       *   *               |
+    |    * *   * *   *           *       *   *       *   *               |
+    |    *   *   *   *           *       *   *       *   *               |
+    |    *       *   ****        *********   *       *   *               |
+    |    *       *   *           *       *   *       *   *               |
+    |    *       *   *           *       *    *     *    *               |
+    |    *       *   *********   *       *       *       ********        |
+    |                                                                    |
+    |____________________________________________________________________|
+*/

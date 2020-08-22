@@ -1,0 +1,39 @@
+
+
+_builtin_popcount(x): This function is used to count the number of one’s(set bits) in an integer.
+Example:
+if x = 4
+binary value of 4 is 100
+Output: No of ones is 1.
+
+Count of 1s in binary of 5 is 2
+Note: Similarly you can use __builtin_popcountl(x) & __builtin_popcountll(x) for long and long long data types.
+
+
+
+
+
+_builtin_parity(x): This function is used to check the parity of a number. This function returns true(1) if the number has odd parity else it returns false(0) for even parity.
+Example:
+if x = 7
+7 has odd no. of 1's in its binary(111).
+Output: Parity of 7 is 1 
+
+
+Output:
+Parity of 7 is 1
+Note: Similarly you can use __builtin_parityl(x) & __builtin_parityll(x) for long and long long data types.
+
+
+
+
+
+__builtin_clz(x): This function is used to count the leading zeros of the integer. Note : clz = count leading zero’s
+Example: It counts number of zeros before the first occurrence of one(set bit).
+a = 16
+Binary form of 16 is 00000000 00000000 00000000 00010000
+Output: 27
+
+Note: __builtin_clz(x) This function only accept unsigned values
+Note: Similarly you can use __builtin_clzl(x) & __builtin_clzll(x) for long and long long data types.
+
