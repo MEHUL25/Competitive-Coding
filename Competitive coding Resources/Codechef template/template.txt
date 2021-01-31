@@ -18,6 +18,13 @@ const double PI = acos(-1.0);
 #define pb push_back
 #define mp make_pair
 
+bool isPowerOfTwo(int n)
+{
+   if(n==0)
+   return false; 
+   return (ceil(log2(n)) == floor(log2(n)));
+}
+
 template <typename T>
 T modpow(T base, T exp, T modulus){  
     base %= modulus;  T result = 1;  
